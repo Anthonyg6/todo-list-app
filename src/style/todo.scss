@@ -1,0 +1,31 @@
+.todo-form-wrapper {
+  display: grid;
+  grid-column: content-s/content-e;
+  grid-row: input-s/input-e;
+  justify-content: center;
+  align-self: center;
+  background-color: #f5f5f5;
+  .form-label {
+    display: grid;
+    justify-content: center;
+  }
+  .todo-input {
+    display: grid;
+    box-sizing: border-box;
+    height: 39px;
+    width: 500px;
+    padding-left: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    color: #666;
+    font-size: 18px;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 2px solid teal;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+  }
+}

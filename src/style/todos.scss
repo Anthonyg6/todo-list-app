@@ -1,0 +1,19 @@
+.todo-delete {
+  display: flex;
+
+  .todo-btn {
+    display: grid;
+    grid-row: collection-s/collection-e;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    grid-row: collection-s/collection-e;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+}
