@@ -43,6 +43,26 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
 }
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+  .todo-header {
+    width: 100vw;
+    text-align: center;
+    display: block;
+  }
+
+  .current-clock {
+    width: 100vw;
+    display: block;
+  }
+
+  .form-label {
+    text-align: center;
+  }
+
+  .todo-input {
+    width: 90vw;
+  }
+}
 
 @import "header";
 @import "todo";
