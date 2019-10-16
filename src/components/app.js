@@ -14,14 +14,13 @@ import {
 library.add(faCheckDouble, faCheck, faCheckCircle, faPhone);
 
 export default class App extends Component {
-  state = {
-    todos: [
-      {
-        id: 0,
-        content: "Delete me and lets add some Todo's and rock the day"
-      }
-    ]
-  };
+  constructor() {
+    super();
+
+    this.state = {
+      todos: []
+    };
+  }
 
   deleteTodo = id => {
     const todos = this.state.todos.filter(todo => {
@@ -39,6 +38,7 @@ export default class App extends Component {
     this.setState({
       todos
     });
+    console.log(todos);
   };
   render() {
     return (
