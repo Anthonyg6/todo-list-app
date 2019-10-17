@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class TodoForm extends Component {
   state = {
+    id: " ",
     content: " "
   };
 
@@ -14,6 +15,7 @@ export default class TodoForm extends Component {
     e.preventDefault();
     this.props.addTodo(this.state);
     this.setState({
+      id: Math.random(),
       content: ""
     });
   };
