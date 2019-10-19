@@ -18,7 +18,10 @@ export default class TodoForm extends Component {
       id: Math.random(),
       content: ""
     });
+
+    console.log(this.state);
   };
+
   render() {
     return (
       <div className="todo-form-wrapper">

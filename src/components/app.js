@@ -38,13 +38,17 @@ export default class App extends Component {
     this.setState({
       todos
     });
-    console.log(todos);
   };
+
   render() {
     return (
       <div className="app">
         <Header />
-        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
+        <Todos
+          todos={this.state.todos}
+          deleteTodo={this.deleteTodo}
+          callApi={this.callApi}
+        />
         <TodoForm addTodo={this.addTodo} />
       </div>
     );
