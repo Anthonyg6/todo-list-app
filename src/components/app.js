@@ -44,11 +44,7 @@ export default class App extends Component {
     return (
       <div className="app">
         <Header />
-        <Todos
-          todos={this.state.todos}
-          deleteTodo={this.deleteTodo}
-          callApi={this.callApi}
-        />
+        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
         <TodoForm addTodo={this.addTodo} />
       </div>
     );
